@@ -1,0 +1,19 @@
+# CRIMESCOPE AI - VERIFIED CRIME STATISTICS DATASET TEMPLATE (RFC 4180 COMPLIANT)
+# State: Tamil Nadu, India
+# Publication: Tamil Nadu SCRB Crime Review Compendium 2023 & NCRB Series
+# Required Columns: district_code, category_code, reporting_year, case_count, is_demonstration
+# Optional Columns: reporting_month, arrest_count, convicted_count, chargesheeted_count, incident_date, latitude, longitude, location_description, reporting_unit, source_reference
+district_code,category_code,reporting_year,reporting_month,case_count,arrest_count,convicted_count,chargesheeted_count,incident_date,latitude,longitude,location_description,reporting_unit,source_reference,is_demonstration
+CHN,CYBER_CRIME,2023,6,185,124,56,150,2023-06-15,13.082700,80.270700,"Cyber Crime Cell, Police Commissionerate, Vepery","Chennai City Police","SCRB-CC-2023-01",false
+CBE,PROPERTY_CRIME,2023,8,340,245,110,290,2023-08-20,11.016800,76.955800,"RS Puram Sub-Division, Commercial Zone","Coimbatore City Police","SCRB-CBE-2023-02",false
+MDU,VIOLENT_PERSON,2023,10,210,185,92,195,2023-10-12,9.925200,78.119800,"Town Police Sub-Division, Central Madurai","Madurai District Police","SCRB-MDU-2023-03",false
+TRY,WOMEN_CHILDREN,2023,5,165,142,68,155,2023-05-18,10.790500,78.704700,"All Women Police Station, Cantonment","Tiruchirappalli City Police","SCRB-TRY-2023-04",false
+SLM,ROAD_SAFETY,2023,11,420,380,180,405,2023-11-25,11.664300,78.146000,"NH-44 Omalur Bypass Patrol Sub-Division","Salem District Police","SCRB-SLM-2023-05",false
+TNV,PUBLIC_NARCOTICS,2023,9,115,102,48,110,2023-09-08,8.713900,77.756700,"Palayamkottai Narcotics Enforcement Unit","Tirunelveli Police","SCRB-TNV-2023-06",false
+ERD,ECONOMIC_OFFENCE,2023,4,85,62,28,75,2023-04-14,11.341000,77.717200,"Commercial Taxes & Economic Offences Wing","Erode District Police","SCRB-ERD-2023-07",false
+VLR,PROPERTY_CRIME,2023,7,195,145,65,170,2023-07-22,12.916500,79.132500,"Katpadi Railway Sub-Division Area","Vellore District Police","SCRB-VLR-2023-08",false
+CHN,VIOLENT_PERSON,2023,,520,440,215,480,,13.082700,80.270700,"Pulianthope & Washermanpet Jurisdictions","Greater Chennai Police","SCRB-CHN-2023-ANN",false
+CBE,CYBER_CRIME,2023,12,140,95,42,118,2023-12-05,11.016800,76.955800,"Gandhipuram Digital Forensic Unit","Coimbatore City Police","SCRB-CBE-2023-12",false
+# Demonstrative Benchmark Records (Academic Sandbox Testing - Clearly Flagged)
+CHN,CYBER_CRIME,2023,1,99,70,30,85,2023-01-15,13.080000,80.270000,"Academic Simulation Sandbox Record 1","Cyber Research Unit","DEMO-TEST-01",true
+CBE,PROPERTY_CRIME,2023,2,88,60,25,75,2023-02-15,11.010000,76.950000,"Academic Simulation Sandbox Record 2","Cyber Research Unit","DEMO-TEST-02",true

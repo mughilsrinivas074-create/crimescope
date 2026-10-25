@@ -1,0 +1,241 @@
+/* CrimeScope AI - Futuristic Gaming Command Center Theme */
+@import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@400;600;700&family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;700&display=swap');
+
+:root {
+  --bg-deep: #060911;
+  --bg-surface: #0b1120;
+  --bg-card: #10192e;
+  --bg-card-hover: #17233f;
+  --border-subtle: #1e293b;
+  --border-cyan: rgba(0, 240, 255, 0.35);
+  
+  --cyan-neon: #00f0ff;
+  --cyan-glow: rgba(0, 240, 255, 0.25);
+  --teal-accent: #00e5a3;
+  --teal-glow: rgba(0, 229, 163, 0.25);
+  
+  --amber-warn: #f59e0b;
+  --red-alert: #ef4444;
+  --red-glow: rgba(239, 68, 68, 0.3);
+  --purple-accent: #a855f7;
+
+  --text-main: #f1f5f9;
+  --text-muted: #94a3b8;
+  --text-dim: #64748b;
+  
+  --font-display: 'Chakra Petch', sans-serif;
+  --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+  --font-mono: 'JetBrains Mono', monospace;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--bg-deep);
+  color: var(--text-main);
+  font-family: var(--font-sans);
+  overflow-x: hidden;
+  background-image: 
+    radial-gradient(circle at 50% 0%, rgba(0, 240, 255, 0.05) 0%, transparent 60%),
+    linear-gradient(rgba(11, 17, 32, 0.8) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(11, 17, 32, 0.8) 1px, transparent 1px);
+  background-size: 100% 100%, 40px 40px, 40px 40px;
+  min-height: 100vh;
+}
+
+/* Custom Cyber Scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: var(--bg-deep);
+}
+::-webkit-scrollbar-thumb {
+  background: #1e293b;
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--cyan-neon);
+}
+
+/* Cyber Command Utilities */
+.cyber-panel {
+  background: var(--bg-card);
+  border: 1px solid var(--border-subtle);
+  border-radius: 6px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+  position: relative;
+  overflow: hidden;
+}
+
+.cyber-panel::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, var(--border-cyan), transparent);
+}
+
+.cyber-panel-glow {
+  border-color: var(--border-cyan);
+  box-shadow: 0 0 15px var(--cyan-glow);
+}
+
+.font-display {
+  font-family: var(--font-display);
+}
+
+.font-mono {
+  font-family: var(--font-mono);
+}
+
+/* Button & Controls */
+.cyber-btn {
+  font-family: var(--font-display);
+  font-size: 0.85rem;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  padding: 0.5rem 1rem;
+  background: rgba(0, 240, 255, 0.08);
+  color: var(--cyan-neon);
+  border: 1px solid var(--border-cyan);
+  border-radius: 4px;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  transition: all 0.2s ease;
+  text-decoration: none;
+}
+
+.cyber-btn:hover {
+  background: var(--cyan-neon);
+  color: #000;
+  box-shadow: 0 0 12px var(--cyan-glow);
+}
+
+.cyber-btn-teal {
+  background: rgba(0, 229, 163, 0.08);
+  color: var(--teal-accent);
+  border-color: rgba(0, 229, 163, 0.4);
+}
+.cyber-btn-teal:hover {
+  background: var(--teal-accent);
+  color: #000;
+  box-shadow: 0 0 12px var(--teal-glow);
+}
+
+.cyber-btn-danger {
+  background: rgba(239, 68, 68, 0.1);
+  color: var(--red-alert);
+  border-color: rgba(239, 68, 68, 0.4);
+}
+.cyber-btn-danger:hover {
+  background: var(--red-alert);
+  color: #fff;
+  box-shadow: 0 0 12px var(--red-glow);
+}
+
+.cyber-btn-muted {
+  background: #1e293b;
+  color: var(--text-muted);
+  border-color: #334155;
+}
+.cyber-btn-muted:hover {
+  background: #334155;
+  color: #fff;
+}
+
+/* Input elements */
+.cyber-input {
+  background: rgba(11, 17, 32, 0.9);
+  border: 1px solid var(--border-subtle);
+  color: var(--text-main);
+  padding: 0.5rem 0.75rem;
+  border-radius: 4px;
+  font-family: var(--font-sans);
+  font-size: 0.85rem;
+  outline: none;
+  transition: border-color 0.2s ease;
+  width: 100%;
+}
+
+.cyber-input:focus {
+  border-color: var(--cyan-neon);
+  box-shadow: 0 0 8px var(--cyan-glow);
+}
+
+/* Leaflet Dark Customization */
+.leaflet-container {
+  background-color: #070b14 !important;
+  width: 100%;
+  height: 100%;
+  border-radius: 4px;
+}
+
+.leaflet-control-zoom a {
+  background: #11192d !important;
+  color: var(--cyan-neon) !important;
+  border: 1px solid var(--border-subtle) !important;
+}
+.leaflet-control-zoom a:hover {
+  background: var(--cyan-neon) !important;
+  color: #000 !important;
+}
+
+.leaflet-popup-content-wrapper {
+  background: rgba(16, 25, 46, 0.95) !important;
+  backdrop-filter: blur(8px);
+  color: #fff !important;
+  border: 1px solid var(--border-cyan) !important;
+  border-radius: 6px !important;
+  box-shadow: 0 0 20px rgba(0, 240, 255, 0.25) !important;
+}
+
+.leaflet-popup-tip {
+  background: #10192e !important;
+  border: 1px solid var(--border-cyan) !important;
+}
+
+/* Threat Level Badges */
+.badge-low {
+  background: rgba(0, 229, 163, 0.15);
+  color: var(--teal-accent);
+  border: 1px solid rgba(0, 229, 163, 0.4);
+}
+.badge-moderate {
+  background: rgba(0, 240, 255, 0.15);
+  color: var(--cyan-neon);
+  border: 1px solid rgba(0, 240, 255, 0.4);
+}
+.badge-elevated {
+  background: rgba(245, 158, 11, 0.15);
+  color: var(--amber-warn);
+  border: 1px solid rgba(245, 158, 11, 0.4);
+}
+.badge-high {
+  background: rgba(249, 115, 22, 0.15);
+  color: #f97316;
+  border: 1px solid rgba(249, 115, 22, 0.4);
+}
+.badge-critical {
+  background: rgba(239, 68, 68, 0.15);
+  color: var(--red-alert);
+  border: 1px solid rgba(239, 68, 68, 0.4);
+}
+
+/* Blinking Status Dot */
+@keyframes blink {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.3; }
+}
+.animate-blink {
+  animation: blink 2s infinite ease-in-out;
+}
